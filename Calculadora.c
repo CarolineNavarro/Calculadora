@@ -61,10 +61,15 @@ int main()
         case '/':
             printf("Digite os 2 numeros separados por espaco:\n");
             scanf("%lf" "%lf", &num1, &num2);
+            if (num2==0.00){
+                printf("Divisao invalida");
+                break;
+            }
             divisao(num1, num2);
             break;
 
-    }
+        default:
+            printf("Operador invalido");
+            break;
 
-    return 0;
-}
+    }
